@@ -15,6 +15,6 @@ class Song(models.Model):
     album=models.ForeignKey(Album,on_delete=models.CASCADE)
     songtitle=models.CharField(max_length=1000)
     filetype=models.CharField(max_length=1000)
-    isfavourite=models.BooleanField(default="false")
+    isfavourite=models.BooleanField(default = False)
     def __str__(self):
         return self.songtitle

@@ -19,3 +19,6 @@ def details(request,album_id):
     except Album.DoesNotExist:
         raise Http404("something is wrong")
     return render(request,"music/details.html",{'album':album})
+
+def favourite():
+    pass
